@@ -1,4 +1,12 @@
 .App {
   text-align: center;
 }
-
+.contact-card{
+  padding: 20px;
+  margin: 30px 34%;
+  border: dotted lightgrey 1px;
+  width:30%;
+  border-radius: 2%;
+  background-color: lightblue;
+  box-shadow: 1px 2px lightgrey;
+}

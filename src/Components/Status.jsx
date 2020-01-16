@@ -17,8 +17,8 @@ class Status extends Component {
         },
         {
           firstName: "Ryan",
-          lastName: "McKenna",
-          phone: "555-555-5555",
+          lastName: "Mickey",
+          phone: "504-265-5755",
           buttonId: "button-1",
           divId: "div-1",
           status: "Pending...",
@@ -29,7 +29,7 @@ class Status extends Component {
         {
           firstName: "John",
           lastName: "James",
-          phone: "555-555-5555",
+          phone: "325-045-5653",
           buttonId: "button-2",
           divId: "div-2",
           status: "Pending...",
@@ -40,7 +40,7 @@ class Status extends Component {
         {
           firstName: "Sally",
           lastName: "Smith",
-          phone: "555-555-5555",
+          phone: "554-545-5445",
           buttonId: "button-3",
           divId: "div-3",
           status: "Pending...",
@@ -64,11 +64,11 @@ class Status extends Component {
         <div>
           {contacts.map((contact,i) => {
             return (
-              <div key={contact.divId}>
+              <div className="contact-card" key={contact.divId}>
                 <p key={contact.firstName}>
                   Please contact {contact.firstName} {contact.lastName} at {contact.phone}.
                 </p>
-                <button key={contact.buttonId} style={contact.style} onClick={this.switchStatusHandler.bind(this, i)}>{contact.status}</button>
+                <button className="btn" key={contact.buttonId} style={contact.style} onClick={this.switchStatusHandler.bind(this, i)}>{contact.status}</button>
               </div>
             );
           })}
